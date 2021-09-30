@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('pic1 (1).jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 2px 23px;
+            font-size: 13px;
+            color: white;
+        }
+        .logo{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 301px;
+            top: 38px;
+        }
+        .logo img{
+            width: 68px;
+        }
+        .contact img{
+            width: 500px;
+        }
+        .contact{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 30px;
+            top: 48px;
+        }
+        .container {
+            padding: 9px;
+            margin: 15px 68px;
+            border: 3px solid rgb(53, 51, 51);
+            border-radius: 24px;
+            width: 47%;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="submit"],
+        input[type="reset"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border-color: rgb(24, 22, 36);
+        }
+
+        .main_head {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            padding-top: 10px;
+            margin-top: 20px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 14px;
+        }
+
+        input[type="reset"] {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            border-radius: 14px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: rgb(39, 182, 39);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logopng.png" alt="">
+    </div>
+    <div class="contact">
+        <img src="pngwing.com.png" alt="">
+    </div>
+    <div class="container">
+        <form action="">
+            <h1 class="main_head">Contact Us</h1>
+            <hr>
+            <h2>contact detail</h2>
+            <p>Name: <input type="text" name="name" required placeholder="Enter Your Name"></p>
+            <fieldset style="border: 2px solid black">
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="Male">
+                    Female <input type="radio" name="gender" id="Female" required>
+                </p>
+            </fieldset>
+            <p>
+                Mobile number: <input type="number" name="number" id="number" required
+                    placeholder="Enter Mobile number">
+            </p>
+            <p>
+                EMail: <input type="email" name="email" id="email" required placeholder="Enter Your E-mail">
+            </p>
+            <p>
+                Describe what you want to contact us for here: <textarea style="border: 2px solid black" name="Message"
+                    id="Message" rows="4" required placeholder="Your Message"></textarea>
+            </p>
+            <div>
+                <input type="reset" value="Reset now">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
